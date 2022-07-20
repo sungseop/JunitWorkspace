@@ -1,0 +1,21 @@
+package junit.sample;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+import com.ezen.unit.Calculate;
+import com.ezen.unit.StringOp;
+
+class AssertionTest {
+	StringOp op = new StringOp();
+	Calculate calc = new Calculate();
+	
+	@Test
+	void testAssertEquals() {
+		assertEquals("ABC", op.strReturn());
+		assertEquals(20,calc.sum(10, 10), "calc.sum(10,10) = 23");
+		assertEquals(2+2, 4);
+	}
+
+}

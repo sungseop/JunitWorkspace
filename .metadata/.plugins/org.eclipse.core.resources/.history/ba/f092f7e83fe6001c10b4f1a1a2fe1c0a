@@ -1,0 +1,23 @@
+package junit.sample;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.Test;
+import org.junit.platform.suite.api.Suite;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite.SuiteClasses;
+
+@RunWith(Suite.class)
+@SuiteClasses({
+	TestJunit1.class,
+	TestJunit2.class
+})
+
+class JunitTestSuite {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

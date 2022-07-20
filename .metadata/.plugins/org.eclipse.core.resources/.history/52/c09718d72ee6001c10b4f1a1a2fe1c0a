@@ -1,0 +1,17 @@
+package junit.sample;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class AnnoationTest {
+	@BeforeAll
+	public static void beforeAll() {
+		System.out.println("@BeforeAll - 모든 테스트 메소드 실행 전 한번만 실행.");
+	}
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

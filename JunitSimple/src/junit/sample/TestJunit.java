@@ -1,0 +1,15 @@
+package junit.sample;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TestJunit {
+
+	@Test
+	void test() {
+		String str = "Junit is working fine.";
+		
+		assertEquals("Junit is working fine.", str);			
+	}
+}

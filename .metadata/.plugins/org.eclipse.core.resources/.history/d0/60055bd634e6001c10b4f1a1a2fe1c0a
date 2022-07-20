@@ -1,0 +1,17 @@
+package junit.sample;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+import com.ezen.unit.StringOp;
+
+class AssertionTest {
+	StringOp op = new StringOp();
+	
+	@Test
+	void testAssertEquals() {
+		assertEquals("ABC", op.strReturn());
+	}
+
+}

@@ -1,0 +1,18 @@
+package junit.sample;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import com.ezen.unit.Calculate;
+
+class CalculateTest {
+	Calculate calc = new Calculate();
+	int sum = calc.sum(2, 5);
+	int testSum = 7;
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}
